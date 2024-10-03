@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniDevs - Turmas</title>
+    <link rel="stylesheet" href="style.css"> <!-- Inclua um arquivo CSS separado, se necessário -->
+</head>
+<body>
+  <h1>UniDevs</h1>  
+  <h2>Turmas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Período</th>
+                <th>ID do Professor</th>
+            </tr>
+        </thead>
+        <tbody id="turmasTableBody">
+            <!-- As linhas da tabela serão inseridas aqui via JavaScript -->
+        </tbody>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="showTurmas.js"></script> <!-- Importa seu arquivo showTurmas.js -->
+    <script>
+        window.onload = showTurmas; // Chama a função showTurmas ao carregar a página
+    </script>
+</body>
+</html>
